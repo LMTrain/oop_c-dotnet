@@ -1,0 +1,11 @@
+C:\Udemy\OOP\bin\Debug\netcoreapp3.1\OOP.exe
+C:\Udemy\OOP\bin\Debug\netcoreapp3.1\OOP.deps.json
+C:\Udemy\OOP\bin\Debug\netcoreapp3.1\OOP.runtimeconfig.json
+C:\Udemy\OOP\bin\Debug\netcoreapp3.1\OOP.runtimeconfig.dev.json
+C:\Udemy\OOP\bin\Debug\netcoreapp3.1\OOP.dll
+C:\Udemy\OOP\bin\Debug\netcoreapp3.1\OOP.pdb
+C:\Udemy\OOP\obj\Debug\netcoreapp3.1\OOP.csprojAssemblyReference.cache
+C:\Udemy\OOP\obj\Debug\netcoreapp3.1\OOP.AssemblyInfoInputs.cache
+C:\Udemy\OOP\obj\Debug\netcoreapp3.1\OOP.AssemblyInfo.cs
+C:\Udemy\OOP\obj\Debug\netcoreapp3.1\OOP.dll
+C:\Udemy\OOP\obj\Debug\netcoreapp3.1\OOP.pdb
