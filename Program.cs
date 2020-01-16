@@ -6,7 +6,14 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CarSalesman steveTheSalesman = new CarSalesman("Steve", "Rogers");
+            Console.WriteLine(steveTheSalesman.FullName);
+            steveTheSalesman.Sell();
+
+            RetailSalesPerson erikTheSalesdude = new RetailSalesPerson("Erik", "Erikson");
+            Console.WriteLine(erikTheSalesdude.FullName);
+            erikTheSalesdude.Sell();
+
         }
     }
 }

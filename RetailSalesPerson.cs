@@ -1,5 +1,6 @@
 using System;
-public class CarSalesman
+
+public class RetailSalesPerson
 {
     private string _firstName;
     private string _lastName; 
@@ -11,7 +12,7 @@ public class CarSalesman
             return string.Format("{0} {1}", this._firstName, this._lastName);
         }
     }
-    public CarSalesman(string firstName, string lastName)
+    public RetailSalesPerson(string firstName, string lastName)
     {
         this._firstName = firstName;
         this._lastName = lastName;
@@ -19,6 +20,6 @@ public class CarSalesman
 
     public void Sell()
     {
-        Console.WriteLine(string.Format("Hi my name is {0}. I would recommend you to buy this car!", this.FullName));
+        Console.WriteLine(string.Format("Hi my name is {0}. I would recommend you to buy this pen!", this.FullName));
     }
 }
