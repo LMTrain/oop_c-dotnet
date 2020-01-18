@@ -10,7 +10,11 @@ namespace OOP
             Console.WriteLine(steveTheSalesman.FullName);
             steveTheSalesman.Sell();
 
-            RetailSalesPerson erikTheSalesdude = new RetailSalesPerson("Erik", "Erikson");
+            CarSalesman erikTheSalesdude = new CarSalesman("Erik", "Erikson");
+            Console.WriteLine(erikTheSalesdude.FullName);
+            erikTheSalesdude.Sell();
+
+            RetailSalesPerson johnTheSalesdude = new RetailSalesPerson("John", "Doe");
             Console.WriteLine(erikTheSalesdude.FullName);
             erikTheSalesdude.Sell();
 
