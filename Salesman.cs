@@ -9,7 +9,7 @@ public abstract class Salesman
     {
         get
         {
-            return string.Format("{0} {1}", this._lastName);
+            return string.Format("{0} {1}", this._firstName, this._lastName);
         }
     }
  

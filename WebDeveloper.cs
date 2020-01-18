@@ -1,6 +1,6 @@
 using System;
 
-public class WebDeveloper: Developer
+public class WebDeveloper: Developer, SelfDeveloping
 {
     public WebDeveloper(string mainDevLanguage) :base(mainDevLanguage)
     {

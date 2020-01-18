@@ -7,12 +7,21 @@ public abstract class Developer
     
     public Developer(string mainDevLanguage)
     {
-        this._mainDevLanguage = mainDevLanguage;
-        
+        this._mainDevLanguage = mainDevLanguage;        
+    }
+
+     public virtual void Code()
+    {
+        Console.WriteLine(string.Format("I am coding using my main dev language {0}.", this._mainDevLanguage));
+    }
+
+     public virtual void Code(string extraDevLanguage)
+    {
+        Console.WriteLine(string.Format("I am coding using my main dev language {0}. Additionally, I am using {1} as extra dev language", this._mainDevLanguage, extraDevLanguage));
     }
     
-    public virtual void Code()
+    public virtual void Code(string firstExtraDevLanguage, string secondExtraDevLanguage)
     {
-        Console.WriteLine(String.Format("Hi my name is {0}. I would recommend you to buy this item!", this._mainDevLanguage));
+        Console.WriteLine(string.Format("I am coding using my main dev language {0}. Additionally, I am using {1} and {2} as extra dev languages", this._mainDevLanguage, firstExtraDevLanguage, secondExtraDevLanguage));
     }
 }
