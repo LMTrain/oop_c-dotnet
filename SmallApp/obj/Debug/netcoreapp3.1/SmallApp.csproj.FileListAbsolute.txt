@@ -1,0 +1,11 @@
+C:\Udemy\OOP\SmallApp\bin\Debug\netcoreapp3.1\SmallApp.exe
+C:\Udemy\OOP\SmallApp\bin\Debug\netcoreapp3.1\SmallApp.deps.json
+C:\Udemy\OOP\SmallApp\bin\Debug\netcoreapp3.1\SmallApp.runtimeconfig.json
+C:\Udemy\OOP\SmallApp\bin\Debug\netcoreapp3.1\SmallApp.runtimeconfig.dev.json
+C:\Udemy\OOP\SmallApp\bin\Debug\netcoreapp3.1\SmallApp.dll
+C:\Udemy\OOP\SmallApp\bin\Debug\netcoreapp3.1\SmallApp.pdb
+C:\Udemy\OOP\SmallApp\obj\Debug\netcoreapp3.1\SmallApp.csprojAssemblyReference.cache
+C:\Udemy\OOP\SmallApp\obj\Debug\netcoreapp3.1\SmallApp.AssemblyInfoInputs.cache
+C:\Udemy\OOP\SmallApp\obj\Debug\netcoreapp3.1\SmallApp.AssemblyInfo.cs
+C:\Udemy\OOP\SmallApp\obj\Debug\netcoreapp3.1\SmallApp.dll
+C:\Udemy\OOP\SmallApp\obj\Debug\netcoreapp3.1\SmallApp.pdb
