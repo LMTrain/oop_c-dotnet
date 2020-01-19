@@ -5,8 +5,28 @@ public class CarSalesman : Salesman
     {
     }
     
-    public override void Sell()
+    protected override void Engage()
     {
-        Console.WriteLine(String.Format("Hi my name is {0}. I would recommend you to buy this car!", this.FullName));
+        Console.WriteLine("Hello!");
+    }
+
+    protected override void EstablishTrust()
+    {
+        Console.WriteLine("I just want to help you.");
+    }
+
+    protected override void AddressConcerns()
+    {
+        Console.WriteLine("We are offering 10% discount on everything");
+    }
+
+    protected override void DemoValue()
+    {
+       Console.WriteLine("Our customers love it");
+    }
+
+    protected override void Close()
+    {
+        Console.WriteLine("Buy this car.");
     }
 }
