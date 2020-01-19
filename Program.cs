@@ -7,31 +7,29 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-          List<Object> salesmen = new List<object>() {new CarSalesman("James", "Weaver"), new CarSalesman("Sue", "McGregor"), new RetailSalesPerson("Delores", "Kirby"), new InsuranceBroker("Laycon", "M")};
+          List<Salesman> salesmen = new List<Salesman>() {new CarSalesman("James", "Weaver"), new CarSalesman("Sue", "McGregor"), new RetailSalesPerson("Delores", "Kirby"), new InsuranceBroker("Laycon", "M"), new OnlineMarketer("Steve", "Williams")};
 
           foreach(var item in salesmen)
           {
               ShowMeHowToSell(item);
           }
+
+          List<SelfDeveloping> selfDeveloping = new List<SelfDeveloping>() {new RetailSalesPerson("Delores", "Kirby"), new WebDeveloper("C#")};
+
+          foreach(var item in selfDeveloping)
+          {
+              ShowMeHowToSellDevelop(item);
+          }
         }
 
-        static void ShowMeHowToSell(Object salesmen)
+        static void ShowMeHowToSell(Salesman salesmen)
         {
-            if (salesmen is CarSalesman)
-            {
-                CarSalesman carSalesman = (CarSalesman) salesmen;
-                carSalesman.Sell();
-            }
-            else if (salesmen is RetailSalesPerson)
-            {
-                RetailSalesPerson retailSalesPerson = (RetailSalesPerson) salesmen;
-                retailSalesPerson.Sell();
-            }
-            else
-            {
-                InsuranceBroker insuranceBroker = (InsuranceBroker) salesmen;
-                insuranceBroker.Sell();
-            }
+            salesmen.Sell();
+        }
+
+        static void ShowMeHowToSellDevelop(SelfDeveloping SelfDeveloping)
+        {
+            SelfDeveloping.Develop();
         }
     }
 }
