@@ -1,6 +1,6 @@
 public class BookWriter : Writer
 {
-    public BookWriter()
+    public BookWriter(string firstName, string lastName) : base(firstName, lastName)
     {
     }
 

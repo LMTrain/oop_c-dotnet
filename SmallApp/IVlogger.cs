@@ -1,4 +1,4 @@
 public interface IVlogger
 {
-    void vLOG();
+    void Vlog();
 }

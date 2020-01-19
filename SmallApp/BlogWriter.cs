@@ -1,8 +1,7 @@
 public class BlogWriter : Writer
 {
-    public BlogWriter()
+    public BlogWriter(string firstName, string lastName) : base(firstName, lastName)
     {
-
     }
 
     public override void Vlog()
