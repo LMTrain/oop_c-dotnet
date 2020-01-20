@@ -1,16 +1,18 @@
+using System;
+
 public class OmniaClubPromoter : Promoter
 {
-    public OmniaClubPromoter(string firstName, string lastName, int cellPhone) : base(firstName, lastName, cellPhone)
+    public OmniaClubPromoter(string firstName, string lastName, long cellPhone) : base(firstName, lastName, cellPhone)
     {
     }
 
     protected override void ShareWithInnerCircle()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I share with my friends.");
     }
 
     protected override void UsePaidAds()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I use Google AdWords.");
     }
 }

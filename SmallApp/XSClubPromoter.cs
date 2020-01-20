@@ -1,28 +1,30 @@
+using System;
+
 public class XSClubPromoter : Promoter, IBodyBuilder, IVlogger
 {
-    public XSClubPromoter(string firstName, string lastName, int cellPhone) : base(firstName, lastName, cellPhone)
+    public XSClubPromoter(string firstName, string lastName, long cellPhone) : base(firstName, lastName, cellPhone)
     {
     }
 
     protected override void ShareWithInnerCircle()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I share with my Instagram followers.");
     }
 
     protected override void UsePaidAds()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I use FaceBook ads.");
     }
    
     public void Vlog()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I use a DSLR in order to vLog.");
     }
 
    
     public void Workout()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I workout at home.");
     }
 
     

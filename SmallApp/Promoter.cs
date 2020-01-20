@@ -5,7 +5,7 @@ public abstract class Promoter
 
     private string _firstName;
     private string _lastName;
-    private int _cellPhone;
+    private long _cellPhone;
 
     public string MyBusinessCard
     {
@@ -15,7 +15,7 @@ public abstract class Promoter
         }
     }
 
-    public Promoter(string firstName, string lastName, int cellPhone)
+    public Promoter(string firstName, string lastName, long cellPhone)
     {
         this._firstName = firstName;
         this._lastName = lastName;

@@ -1,3 +1,5 @@
+using System;
+
 public class BookWriter : Writer
 {
     public BookWriter(string firstName, string lastName) : base(firstName, lastName)
@@ -6,12 +8,12 @@ public class BookWriter : Writer
 
     public override void Vlog()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I vlog using my iPhone.");
     }
 
     public override void Write()
     {
-        
+        Console.WriteLine("I write books.");
     }
 
 }
