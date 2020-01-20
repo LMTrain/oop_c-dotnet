@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Udemy\\OOP\\SmallApp\\SmallApp.csproj": {}
+    "C:\\Udemy\\OOP\\smallapp\\SmallApp.csproj": {}
   },
   "projects": {
-    "C:\\Udemy\\OOP\\SmallApp\\SmallApp.csproj": {
+    "C:\\Udemy\\OOP\\smallapp\\SmallApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Udemy\\OOP\\SmallApp\\SmallApp.csproj",
+        "projectUniqueName": "C:\\Udemy\\OOP\\smallapp\\SmallApp.csproj",
         "projectName": "SmallApp",
-        "projectPath": "C:\\Udemy\\OOP\\SmallApp\\SmallApp.csproj",
+        "projectPath": "C:\\Udemy\\OOP\\smallapp\\SmallApp.csproj",
         "packagesPath": "C:\\Users\\Prog\\.nuget\\packages\\",
-        "outputPath": "C:\\Udemy\\OOP\\SmallApp\\obj\\",
+        "outputPath": "C:\\Udemy\\OOP\\smallapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Prog\\AppData\\Roaming\\NuGet\\NuGet.Config"
