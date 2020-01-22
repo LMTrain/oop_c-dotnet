@@ -8,12 +8,13 @@ namespace Day02
     {
         static void Main(string[] args)
         {
-            var maxValue = int.MaxValue;
-            var addSugar = 19;
-            //int sumWillthrowError = 2147483647 + 19; //compile time error
-            var sumWillNotThrowError = maxValue + addSugar;
-            //var sumWillNotThrowError = checked(maxValue + addSugar); //compile time error
-            WriteLine($"sum value:{sumWillNotThrowError} is not the correct value because it is larger than {maxValue}.");
+            WriteLine("Various inbuilt types have size as mentioned below:\n");
+            WriteLine($"The size of data type int is: {sizeof(int)}");
+            WriteLine($"The size of data type long is: {sizeof(long)}");
+            WriteLine($"The size of data type double is: {sizeof(double)}");
+            WriteLine($"The size of data type bool is: {sizeof(bool)}");
+            WriteLine($"The size of data type short is: {sizeof(short)}");
+            WriteLine($"The size of data type byte is: {sizeof(byte)}");
         }
     }
 }
