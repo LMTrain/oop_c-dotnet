@@ -8,13 +8,13 @@ namespace Day02
     {
         static void Main(string[] args)
         {
-            WriteLine("Various inbuilt types have size as mentioned below:\n");
-            WriteLine($"The size of data type int is: {sizeof(int)}");
-            WriteLine($"The size of data type long is: {sizeof(long)}");
-            WriteLine($"The size of data type double is: {sizeof(double)}");
-            WriteLine($"The size of data type bool is: {sizeof(bool)}");
-            WriteLine($"The size of data type short is: {sizeof(short)}");
-            WriteLine($"The size of data type byte is: {sizeof(byte)}");
+            var thisIsADouble = 30.3D;
+            WriteLine("using typeof()");
+            WriteLine($"System.Type Object of {nameof(Program)} is {typeof(Program)}\n");
+            var objProgram = new Program();
+            WriteLine("using GetType()");
+            WriteLine($"Sytem.Type Object of {nameof(objProgram)} is {objProgram.GetType()}");
+            WriteLine($"Sytem.Type Object of {nameof(thisIsADouble)} is {thisIsADouble.GetType()}");
         }
     }
 }
