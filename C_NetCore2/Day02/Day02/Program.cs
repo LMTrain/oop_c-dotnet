@@ -8,8 +8,20 @@ namespace Day02
     {
         static void Main(string[] args)
         {
-            for (var i = 0; i < 9; i++)
-                Beep();
+            WriteLine("Is As Operator");
+            var author = new Author { Name = "Gaurav Aroraa" };
+            var reviewer = new Reviewer { Name = "Shivprasad Koirala" };
+            var team = new TeamMember { Name = "Vikas Tiwari" };
+            var stackholder = new Stackholder();
+            WriteLine("Author name using as:\n");
+            stackholder.GetAuthorName(author);
+            WriteLine("\nAuthor name using is:");
+            stackholder.GetStackholdersname(author);
+            WriteLine("Review name using is:");
+            stackholder.GetStackholdersname(reviewer);
+            WriteLine("Team member name using is:");
+            stackholder.GetStackholdersname(team);
+            ReadLine();
         }
     }
 }
