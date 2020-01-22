@@ -8,20 +8,12 @@ namespace Day02
     {
         static void Main(string[] args)
         {
-            WriteLine("Is As Operator");
-            var author = new Author { Name = "Gaurav Aroraa" };
-            var reviewer = new Reviewer { Name = "Shivprasad Koirala" };
-            var team = new TeamMember { Name = "Vikas Tiwari" };
-            var stackholder = new Stackholder();
-            WriteLine("Author name using as:\n");
-            stackholder.GetAuthorName(author);
-            WriteLine("\nAuthor name using is:");
-            stackholder.GetStackholdersname(author);
-            WriteLine("Review name using is:");
-            stackholder.GetStackholdersname(reviewer);
-            WriteLine("Team member name using is:");
-            stackholder.GetStackholdersname(team);
-            ReadLine();
+            var maxValue = int.MaxValue;
+            var addSugar = 19;
+            //int sumWillthrowError = 2147483647 + 19; //compile time error
+            var sumWillNotThrowError = maxValue + addSugar;
+            //var sumWillNotThrowError = checked(maxValue + addSugar); //compile time error
+            WriteLine($"sum value:{sumWillNotThrowError} is not the correct value because it is larger than {maxValue}.");
         }
     }
 }
