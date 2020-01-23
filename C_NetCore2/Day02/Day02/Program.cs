@@ -12,24 +12,23 @@ namespace Day02
         
         static void Main(string[] args)
         {
-            WriteLine("Jagged array.\n");
-            string[][,] collaborators = new string[3][,]
-            {
-                new[,] {{"Name", "Shivprasad Koirala"}, {"Age", "40"}},
-                new[,] {{"Name", "Gaurav Aroraa" }, {"Age", "43"}},
-                new[,] {{"Name", "Vikas Tiwari"}, {"Age", "28"}}
-            };
+            WriteLine("String object creation");
+            string authorName = "Gaurav Aroraa"; //string literal assignment
+            WriteLine($"{authorName}");
+            string property = "Name: ";
+            string person = "Gaurav";
+            string personName = property + person; //string concatenation
+            WriteLine($"{personName}");
 
-            for (int index = 0; index < collaborators.Length; index++)
-            {
-                for (int rowIndex = 0; rowIndex < 2; rowIndex++)
-                {
-                    for (int colIndex = 0; colIndex < 2; colIndex++)
-                    {
-                        WriteLine($"collaborators[{index}][{rowIndex},{colIndex}] = {collaborators[index][rowIndex, colIndex]}");
-                    }
-                }
-            }
+            char[] langauge = { 'c', 's', 'h', 'a', 'r', 'p' };
+            string strLanguage = new string(langauge); //initializing the cosntructor
+            WriteLine($"{strLanguage}");
+            string repeatMe = new string('*', 5);
+            WriteLine($"{repeatMe}");
+            string[] members = { "Shivprasad", "Denim", "Vikas", "Gaurav" };
+            string name = string.Join(" ", members); //method returing string
+            WriteLine($"{name}");
+            ReadLine();
         }
        
     }
