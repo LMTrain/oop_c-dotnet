@@ -10,15 +10,18 @@ namespace Day02
     {
         static void Main(string[] args)
         {
-            WriteLine("if else statement example.");
-            Write("Enter character:");
-            char inputChar = Convert.ToChar(ReadLine());
-            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+            WriteLine("do...while example");
+            Write("Enter repeatitive length:");
+            int length = Convert.ToInt32(ReadLine());
+            int count = 0;
+            do
+            {
+                count++;
+                WriteLine(new string('*', count));
 
-            if (vowels.Contains(char.ToLower(inputChar)))
-                WriteLine($"Character '{inputChar}' is a vowel.");
-            else
-                WriteLine($"Character '{inputChar}' is a consonent.");
+
+            }
+            while (count < length);
             ReadLine();
         }
        
