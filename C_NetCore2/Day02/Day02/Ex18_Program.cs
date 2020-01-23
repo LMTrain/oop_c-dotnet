@@ -12,18 +12,16 @@ namespace Day02
         
         static void Main(string[] args)
         {
-            WriteLine("break statement example");
-            WriteLine("break in for loop");
-            for (int count = 0; count < 50; count++)
+            WriteLine("continue statement example");
+            WriteLine("continue in for loop");
+            for (int count = 0; count < 15; count++)
             {
-                if (count == 48)
+                if (count < 8)
                 {
-                    break;
+                    continue;
                 }
                 WriteLine($"{count}");
             }
-            WriteLine();
-            WriteLine("break in switch statement");
             ReadLine();
         }
        
