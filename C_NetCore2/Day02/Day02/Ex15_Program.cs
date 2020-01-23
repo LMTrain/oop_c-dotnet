@@ -10,13 +10,18 @@ namespace Day02
     {
         static void Main(string[] args)
         {
-            WriteLine("for loop example");
+            WriteLine("do...while example");
             Write("Enter repeatitive length:");
             int length = Convert.ToInt32(ReadLine());
-            for (int countIndex = 0; countIndex < length; countIndex++)
-            {               
-                WriteLine(new string('*', countIndex));
-            }           
+            int count = 0;
+            do
+            {
+                count++;
+                WriteLine(new string('*', count));
+
+
+            }
+            while (count < length);
             ReadLine();
         }
        
