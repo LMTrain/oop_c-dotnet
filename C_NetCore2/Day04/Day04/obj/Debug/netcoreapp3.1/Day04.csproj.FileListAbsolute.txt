@@ -1,0 +1,11 @@
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\bin\Debug\netcoreapp3.1\Day04.exe
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\bin\Debug\netcoreapp3.1\Day04.deps.json
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\bin\Debug\netcoreapp3.1\Day04.runtimeconfig.json
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\bin\Debug\netcoreapp3.1\Day04.runtimeconfig.dev.json
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\bin\Debug\netcoreapp3.1\Day04.dll
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\bin\Debug\netcoreapp3.1\Day04.pdb
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\obj\Debug\netcoreapp3.1\Day04.csprojAssemblyReference.cache
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\obj\Debug\netcoreapp3.1\Day04.AssemblyInfoInputs.cache
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\obj\Debug\netcoreapp3.1\Day04.AssemblyInfo.cs
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\obj\Debug\netcoreapp3.1\Day04.dll
+C:\Udemy\C_Sharp_dotNET core\Day04\Day04\obj\Debug\netcoreapp3.1\Day04.pdb
