@@ -10,24 +10,28 @@ namespace Day04
 {
     class Program
     {
-        public class PersonCollection
-        {
-            private readonly string[] _persons = Persons();
-
-            public bool this[string name] => IsValidPerson(name);
-
-            private bool IsValidPerson(string name) => _persons.Any(person => person == name);
-
-            private static string[] Persons() => new[] { "Shivprasad", "Denim", "Vikas", "Merint", "Gaurav" };
-        }
+       
         static void Main(string[] args)
         {
-            WriteLine("Indexer example.");
-            Write("Enter person name to search from collection:");
-            var name = ReadLine();
-            var person = new PersonCollection();
-            var result = person[name] ? "exists." : "does not exist.";
-            WriteLine($"Person name '{name}' {result}");
+            const string textLine = "This file is created during practice of C#";
+            Write("Enter file name (without extension):");
+            var fileName = ReadLine();
+            var fileNameWithPath = $"C:/udemy/{fileName}.txt";
+            using (var fileStream = File.Create(fileNameWithPath))
+            {
+                   var iBytes = new UTF8Encoding(true).GetBytes(textLine);
+                fileStream.Write(iBytes, 0, iBytes.Length);
+            }
+            WriteLine("Write operation is completed.");
+            ReadLine();
+            using (var fileStream = File.OpenRead(fileNameWithPath))
+            {
+                var bytes = new byte[1024];
+                var encoding = new UTF8Encoding(true);
+                while (fileStream.Read(bytes, 0, bytes.Length) > 0)
+                    WriteLine(encoding.GetString(bytes));
+                ReadLine();
+            }
         }
     }
 }
