@@ -8,12 +8,17 @@ namespace Day05
     {
         static void Main(string[] args)
         {
-            Write("Enter number: ");
-            var num = ReadLine();
-            var objInstance = Activator.CreateInstance(typeof(OddEven));
-            var method = typeof(OddEven).GetMethod("PrintSingleOddEven");
-            var res = method.Invoke(objInstance, new object[] { ToInt32(num) });
-            WriteLine($"Number:{num} is {res}");
+            WriteLine("Getting information using 'typeof' operator for class 'Day05.Program'");
+            var typeInfo = typeof(Program);
+            typeInfo.GetConstructor(new[] { typeof(Program) });
+            WriteLine();
+            WriteLine("Analysis result(s):");
+            WriteLine("=========================");
+            WriteLine($"Assembly:{typeInfo.AssemblyQualifiedName}");
+            WriteLine($"Name:{typeInfo.Name}");
+            WriteLine($"Full Name:{typeInfo.FullName}");
+            WriteLine($"Namespace:{typeInfo.Namespace}");
+            WriteLine("=========================");
             ReadLine();
         }
     }
