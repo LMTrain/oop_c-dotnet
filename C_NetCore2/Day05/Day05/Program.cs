@@ -8,16 +8,15 @@ namespace Day05
     {
         static void Main(string[] args)
         {
-            WriteLine("Getting information using 'typeof' operator for class 'Day05.Program'");
-            var typeInfo = typeof(Program);
-            typeInfo.GetConstructor(new[] { typeof(Program) });
+            WriteLine("Getting information using 'GetType()' method for class 'Day05.Program'");
+            var info = Type.GetType("Day05.Program");
             WriteLine();
             WriteLine("Analysis result(s):");
             WriteLine("=========================");
-            WriteLine($"Assembly:{typeInfo.AssemblyQualifiedName}");
-            WriteLine($"Name:{typeInfo.Name}");
-            WriteLine($"Full Name:{typeInfo.FullName}");
-            WriteLine($"Namespace:{typeInfo.Namespace}");
+            WriteLine($"Assembly:{info.AssemblyQualifiedName}");
+            WriteLine($"Name:{info.Name}");
+            WriteLine($"Full Name:{info.FullName}");
+            WriteLine($"Namespace:{info.Namespace}");
             WriteLine("=========================");
             ReadLine();
         }
