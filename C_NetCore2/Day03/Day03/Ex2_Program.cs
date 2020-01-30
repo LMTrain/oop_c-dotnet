@@ -9,7 +9,8 @@ namespace Day03
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            //ENTERING NUMBERS
             Write("Enter first number: ");
             var userInputFirst = ReadLine();
             Write("Enter second number: ");
