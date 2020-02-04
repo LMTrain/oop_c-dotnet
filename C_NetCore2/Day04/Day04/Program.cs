@@ -22,6 +22,7 @@ namespace Day04
                    var iBytes = new UTF8Encoding(true).GetBytes(textLine);
                 fileStream.Write(iBytes, 0, iBytes.Length);
             }
+            //DISPLAYED COMMENT FILE IS CREATED
             WriteLine("Write operation is completed.");
             ReadLine();
             using (var fileStream = File.OpenRead(fileNameWithPath))
