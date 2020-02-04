@@ -7,7 +7,7 @@ namespace Day05
     class Program
     {
         static void Main(string[] args)
-        {
+        {   //INPUT COMMENT
             WriteLine("Getting information using 'typeof' operator for class ");
             var typeInfo = typeof(Program);
             typeInfo.GetConstructor(new[] { typeof(Program) });
